@@ -121,7 +121,11 @@ Isso evidencia o uso de credenciais padrão e ausência de políticas de seguran
 
 ### 📸 Evidência do Ataque
 
-![FTP Bruteforce](images/ftp/ftp-bruteforce.png)
+<img width="567" height="590" alt="image" src="https://github.com/user-attachments/assets/44790a07-506d-44e9-8cbe-7649af270b54" />
+
+
+<img width="567" height="391" alt="image" src="https://github.com/user-attachments/assets/d7033392-caf8-4f0c-8bfd-0a631ef9b018" />
+
 
 ---
 
@@ -146,6 +150,8 @@ Esse comportamento caracteriza um ataque de força bruta.
 ---
 
 ### 📸 Evidência dos Logs
+
+
 
 <img width="567" height="391" alt="log" src="https://github.com/user-attachments/assets/47f6cb5c-cc9b-4f33-92e7-b621c7148da5" />
 
