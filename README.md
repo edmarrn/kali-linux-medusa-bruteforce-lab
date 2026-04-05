@@ -98,3 +98,9 @@ Implementação de autenticação multifator (MFA)
 
 ## 📸 Evidências
 (ver pasta /images)
+
+##📚 Conclusão
+
+O teste demonstrou que serviços expostos com credenciais fracas representam um alto risco de segurança, podendo ser facilmente comprometidos por ataques automatizados de força bruta.
+
+
