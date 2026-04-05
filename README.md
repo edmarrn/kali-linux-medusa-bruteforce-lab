@@ -71,7 +71,8 @@ nmap -sV 192.168.56.102
 
 ### 📸 Evidência
 
-![Nmap Scan](images/nmap/nmap-scan.png)
+<img width="457" height="474" alt="image" src="https://github.com/user-attachments/assets/e1be39fd-d047-4476-93ea-000c02c21ef3" />
+
 
 ---
 
@@ -146,7 +147,8 @@ Esse comportamento caracteriza um ataque de força bruta.
 
 ### 📸 Evidência dos Logs
 
-![FTP Logs](images/ftp/ftp-logs.png)
+<img width="567" height="391" alt="log" src="https://github.com/user-attachments/assets/47f6cb5c-cc9b-4f33-92e7-b621c7148da5" />
+
 
 ---
 
