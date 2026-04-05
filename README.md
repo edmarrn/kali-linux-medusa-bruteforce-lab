@@ -40,10 +40,20 @@ Foi realizada uma varredura para identificar serviços ativos na máquina alvo.
 ```bash
 nmap -sV 192.168.56.102
 
-## 💣 Ataques Realizados
-- FTP
-- DVWA
-- SMB
+## 💣 Ataque de Força Bruta em FTP
+
+### 📌 Objetivo
+
+Realizar um ataque de força bruta no serviço FTP da máquina Metasploitable 2, com o objetivo de identificar credenciais válidas e demonstrar vulnerabilidades relacionadas ao uso de senhas fracas.
+
+---
+
+### 🔍 Identificação do Serviço
+
+Através do uso do Nmap, foi identificado que o serviço FTP estava ativo na porta 21 do alvo.
+
+```bash
+nmap -sV 192.168.56.102
 
 ## 🛡️ Mitigações
 (a preencher)
