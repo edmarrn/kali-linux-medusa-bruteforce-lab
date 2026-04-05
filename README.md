@@ -11,8 +11,12 @@ Este projeto demonstra ataques de força bruta em serviços vulneráveis...
 ## 🌐 Configuração de Rede
 (iremos preencher depois)
 
-## 🔍 Reconhecimento
-(Nmap - em breve)
+## 🔍 Reconhecimento com Nmap
+
+Foi realizada uma varredura para identificar serviços ativos na máquina alvo.
+
+```bash
+nmap -sV 192.168.56.102
 
 ## 💣 Ataques Realizados
 - FTP
