@@ -54,9 +54,49 @@ Através do uso do Nmap, foi identificado que o serviço FTP estava ativo na por
 
 ```bash
 nmap -sV 192.168.56.102
+### 🧪 Validação do Serviço
 
-## 🛡️ Mitigações
-(a preencher)
+ftp 192.168.56.102
+
+### 🚀 Execução do Ataque
+
+O ataque de força bruta foi realizado utilizando a ferramenta Medusa, com uma lista simples de senhas (wordlist).
+
+medusa -h 192.168.56.102 -u msfadmin -P wordlists/simple-wordlist.txt -M ftp
+
+### 🔓 Resultado
+
+O ataque foi bem-sucedido, permitindo a descoberta das credenciais válidas:
+
+Usuário: msfadmin
+Senha: msfadmin
+
+Isso demonstra a presença de credenciais padrão e ausência de políticas de segurança adequadas.
+
+### 📸 Evidência do Ataque
+
+### 🔎 Validação de Acesso
+
+Após a descoberta das credenciais, foi realizado login manual no serviço FTP:
+
+ftp 192.168.56.102
+### 📄 Análise de Logs
+
+Foi realizada a análise dos logs do sistema, onde foram identificadas múltiplas tentativas de login falhas provenientes do IP atacante.
+
+Esse comportamento é característico de ataques de força bruta.
+
+### 📸 Evidência dos Logs
+
+### 🛡️ Medidas de Mitigação
+
+Para evitar esse tipo de ataque, recomenda-se:
+
+Utilização de senhas fortes
+Implementação de bloqueio por tentativas de login
+Uso de ferramentas como Fail2Ban
+Monitoramento contínuo de logs
+Implementação de autenticação multifator (MFA)
 
 ## 📸 Evidências
 (ver pasta /images)
