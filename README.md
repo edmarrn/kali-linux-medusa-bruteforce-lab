@@ -30,14 +30,13 @@ O modo de rede escolhido foi o **Host-Only Adapter**, permitindo a comunicação
 
 Foi realizado teste de comunicação entre as máquinas utilizando o comando:
 
-```bash
 ping 192.168.56.102
 
-## 🔍 Reconhecimento com Nmap
+##🔍 Reconhecimento com Nmap
 
 Foi realizada uma varredura para identificar serviços ativos na máquina alvo.
 
-```bash
+
 nmap -sV 192.168.56.102
 
 ## 💣 Ataque de Força Bruta em FTP
@@ -52,7 +51,6 @@ Realizar um ataque de força bruta no serviço FTP da máquina Metasploitable 2,
 
 Através do uso do Nmap, foi identificado que o serviço FTP estava ativo na porta 21 do alvo.
 
-```bash
 nmap -sV 192.168.56.102
 ### 🧪 Validação do Serviço
 
