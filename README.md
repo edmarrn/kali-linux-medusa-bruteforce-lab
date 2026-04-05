@@ -3,6 +3,15 @@
 ## 📌 Descrição
 Este projeto demonstra ataques de força bruta em serviços vulneráveis...
 
+## ✅ Progresso do Projeto
+
+- [x] Configuração do ambiente
+- [x] Reconhecimento com Nmap
+- [x] Ataque FTP com Medusa
+- [x] Análise de logs
+- [ ] Ataque DVWA
+- [ ] Ataque SMB
+      
 ## 🧪 Ambiente
 - Kali Linux
 - Metasploitable 2
