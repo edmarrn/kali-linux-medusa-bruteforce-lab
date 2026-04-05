@@ -41,13 +41,15 @@ Foi realizado teste de comunicação entre as máquinas utilizando o comando:
 
 ping 192.168.56.102
 
-##🔍 Reconhecimento com Nmap
+## 🔍 Reconhecimento com Nmap
 
 Foi realizada uma varredura para identificar serviços ativos na máquina alvo.
 
 
+```bash
 nmap -sV 192.168.56.102
 
+```
 ## 💣 Ataque de Força Bruta em FTP
 
 ### 📌 Objetivo
@@ -62,21 +64,22 @@ Através do uso do Nmap, foi identificado que o serviço FTP estava ativo na por
 
 nmap -sV 192.168.56.102
 ### 🧪 Validação do Serviço
-
+```bash
 ftp 192.168.56.102
+```
 
 ### 🚀 Execução do Ataque
 
 O ataque de força bruta foi realizado utilizando a ferramenta Medusa, com uma lista simples de senhas (wordlist).
-
+```bash
 medusa -h 192.168.56.102 -u msfadmin -P wordlists/simple-wordlist.txt -M ftp
-
+```
 ### 🔓 Resultado
 
 O ataque foi bem-sucedido, permitindo a descoberta das credenciais válidas:
 
-Usuário: msfadmin
-Senha: msfadmin
+- **Usuário:** msfadmin  
+- **Senha:** msfadmin
 
 Isso demonstra a presença de credenciais padrão e ausência de políticas de segurança adequadas.
 
@@ -85,13 +88,13 @@ Isso demonstra a presença de credenciais padrão e ausência de políticas de s
 ### 🔎 Validação de Acesso
 
 Após a descoberta das credenciais, foi realizado login manual no serviço FTP:
+```bash
 
 ftp 192.168.56.102
-### 📄 Análise de Logs
+```
+📄 Análise de Logs
 
-Foi realizada a análise dos logs do sistema, onde foram identificadas múltiplas tentativas de login falhas provenientes do IP atacante.
-
-Esse comportamento é característico de ataques de força bruta.
+Foi realizada...
 
 ### 📸 Evidência dos Logs
 
@@ -99,12 +102,11 @@ Esse comportamento é característico de ataques de força bruta.
 
 Para evitar esse tipo de ataque, recomenda-se:
 
-Utilização de senhas fortes
-Implementação de bloqueio por tentativas de login
-Uso de ferramentas como Fail2Ban
-Monitoramento contínuo de logs
-Implementação de autenticação multifator (MFA)
-
+- Utilização de senhas fortes  
+- Implementação de bloqueio por tentativas de login  
+- Uso de ferramentas como Fail2Ban  
+- Monitoramento contínuo de logs  
+- Implementação de MFA  
 ## 📸 Evidências
 (ver pasta /images)
 
