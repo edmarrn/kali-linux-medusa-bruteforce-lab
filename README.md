@@ -223,6 +223,8 @@ enum4linux -U 192.168.56.102
 
 ---
 
+<img width="567" height="637" alt="image" src="https://github.com/user-attachments/assets/1e686b67-76a0-4c93-ab19-3121d4875865" />
+
 ## 💣 Ataque SMB com Hydra
 
 ```bash
@@ -245,6 +247,8 @@ Credencial válida encontrada:
 ## 📸 Evidência
 
 <img width="567" height="642" alt="image" src="https://github.com/user-attachments/assets/f50064eb-ebc2-409f-a657-8e3d96991827" />
+
+<img width="567" height="609" alt="image" src="https://github.com/user-attachments/assets/a280e0fb-57aa-42df-a5fe-e875cd8de45c" />
 
 
 ---
